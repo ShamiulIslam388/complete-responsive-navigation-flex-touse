@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>navigation | grid</title>
+</head>
+<body>
+    <div class="nav-container">
+		<div class="container">
+			<nav class="navbar">
+				<h1 id="navbar-logo">LOGO</h1>
+				<div class="menu-toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			
+				<ul class="nav-menu">
+					<li><a href="#" class="nav-links active-btn">Home</a></li>
+					<li><a href="#" class="nav-links">Services</a></li>
+					<li><a href="#" class="nav-links">About Us</a></li>
+					<li><a href="#" class="nav-links">Contact Us</a></li>
+					<li><a href="#" class="nav-links nav-links-btn">Sign Up</a></li>
+				</ul>
+			</nav>
+		</div>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-menu');
+
+        menu.addEventListener('click',function(){
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
